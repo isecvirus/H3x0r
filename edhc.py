@@ -1,9 +1,15 @@
+#!/usr/bin/env python3.10
+"""
+This tool is for educational purposes only.
+author has nothing to do in case this tool used in malicous usage.
+All right reserved to secvirus (for ever)
+"""
 import _tkinter
 import os
 import re
 import threading
 import time
-from tkinter import StringVar, BooleanVar, IntVar
+from tkinter import StringVar, BooleanVar, IntVar, PhotoImage
 from tkinter.ttk import *
 from utils import monitor, edhc_util, _file_
 from ttkbootstrap import Style, Window, Toplevel
@@ -19,7 +25,9 @@ def EDHC():  # EDHC=encode|encrypt,decode|decrypt,hash,crack
     window.geometry(f"+{int(monitor(window)['width'] // 2.7)}+{monitor(window)['height'] // 4}")
     # window.resizable(False, False)
     # window.configure(background='darkred')
-    window.iconbitmap("cracker.ico")
+    ICON = """iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABlVBMVEUAAAD//Pz////6+fncg4P/uLj38/P39/f/8PD/+vqoQECXFRWXFhanPDzmzs6RBweQBQW7a2uvUVGXFxecIyPYs7OOAQGOAACsSUmdJSWXFhasRkacISG8cXGWExOcIiKYGRmTDAySCwuXFRWkNTWVERHBenqbICD28/P6+fmXFhaqRUWqRUWXFRWVEhKXFhaYGRmUDg6ZGxugLCyvT0+UEBDy7++eKCiaHR2aHBydJSWkNTWaHh6bICClNzedJCSbHx+aHByeKCj29vaRCAiZGhqYGBiUDw+VExOdJCSfKiqWFBSUDw+YGBiZGxuQBQXJjo719fWXFhbBenqvUFCZHByVEBCWFBSZGxuxU1OxVFSVERG+cnL38/OaHByqQkKkNTWZGxubHx+1Xl64ZWWcISGYGRmlODirSEiYGRn5+PigKyuQBgaZHByXFxelODinPDyaHByaHByRBweaHR309PSdJiaVERHAe3uaHx+cIiK8bm6VEhKbICD39vaaHx+SCgqXFxeYGBiSCgqaHR38+/uOAABnkqYDAAAAhnRSTlMAAAAAAAAAAAAAFWxxHgTQ4wwQZk4L9v0aQm0XexiJUJq8yqE9nhZ+AgGqLTKkvbWsxpVEKqwGaqBjlYaxuYWYY5h9AtxsZsC3jH+1x29h4gsDjA8sk7ywmiwXgQsBjCpUpFEcF0qmXSaOAS7hqV9TUk2r5TkEMaYbiYgdl0AESdB1Z9FWAU6xUHUAAAABb3JOVAHPoneaAAAAu0lEQVQY02NgIBJwcfPwIvP5+NvaBARhPCFhEVGxtjZxCUkpaRCfUUZWTl5BUUlZRVVNXQMooKmlraOrp29gaGRsYmoGFGAyt7C0sraxtbN3cHRiBgo4u7i6uXt4enn7+Pr5BwAFAoOYgkNCw8IjIqMYomOAArFx8QmJSckpqWnpGZlZQAGW7JzcPIb8AqbCouISkLWsTKVl5RWVVdU1tXVMUKcx1Tc0NjW3sCGcztTKwMDOhOo9Dk4IDQDfpCT23RG+bgAAAABJRU5ErkJggg=="""
+    icon = PhotoImage(data=ICON)
+    window.call('wm', 'iconphoto', window._w, icon)
     window.title("EDHC")
 
     style = Style()
@@ -466,6 +474,4 @@ def EDHC():  # EDHC=encode|encrypt,decode|decrypt,hash,crack
     autoRun.pack(side='right', padx=7)
 
     window.mainloop()
-
-
 EDHC()
