@@ -9,6 +9,6 @@ def Encode_base58(string):
 
 def Decode_base58(string):
     try:
-        return base58.b58encode(string)
+        return base58.b58decode(string)
     except Exception:
         return ''
