@@ -12,6 +12,16 @@ V2.0.0:
 """
 
 
+
+"""
+v2_0_1
+Patches:
+        (hBase58.py:12):
+                Base58 encode even if it put on decode.
+        (hSha224.py:6,8):
+                Sha224 hash on sha1
+"""
+
 # V3.0.0 (I just don't know when, BUT I'LL SEE)
 # Plan to add:
 #     ~ vigenere cipher
