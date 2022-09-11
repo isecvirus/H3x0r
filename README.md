@@ -167,7 +167,7 @@
     - encode
     - decode
 
-# Version 2.0.0
+# Version 2.0.1
 ### Patches:
 - hBase58.py:12
   - Base58 encode even if it put on decode.
