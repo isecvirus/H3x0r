@@ -175,12 +175,41 @@
   - Sha224 hash on sha1
 
 # v2_1_2
-### Added:
+- Added:
     1. added 11 more new types.
     2. searchable types.
     3. added morse code seperators.
-    3. added morse code spacers.
-    4. added more and implementable morse code, _ and . characters.
+    4. added morse code spacers.
+    5. added more and implementable morse code, _ and . characters.
+    - Types:
+      1. hexadecimal
+         - encode
+         - decode
+      2. color to rgb
+         - convert
+      3. color to hex
+         - convert
+      4. hex to color
+         - convert
+      5. hex to rgb
+         - convert
+      6. rgb to hex
+         - convert
+      7. rgb to color
+         - convert
+      8. html
+         - encode
+         - decode
+      9. kmac128
+         - hash
+      10. kmac256
+          - hash
+      11. timestamp
+          - convert
+      12. replace
+          - replace
+      13. remove
+          - remove
 ### Edited:
     1. From (Window starts in full-screen mode) to (normal mode).
     2. implemented morse (code).
