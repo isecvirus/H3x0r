@@ -1248,32 +1248,35 @@ def Hexor():
     types_radiobtns_frame.pack(side='left', fill='both', expand=True)
     selected_typeVar = StringVar()
     def Type_changed():
-        type = selected_typeVar.get()
-        type_safe_name = list(execute[type].keys())
-        # ==============================================================================================================
-        if 'safe' in type_safe_name:
-            safe_name = list(execute[type]['safe'].keys())[0]
-            Safe.config(text=safe_name.capitalize(), command=lambda: Run(method="safe", action=safe_name))
-            Safe.pack(side='left', fill='x', expand=True)
-        else:
-            Safe.pack_forget()
-        # ==============================================================================================================
-        if 'unsafe' in type_safe_name:
-            unsafe_name = list(execute[type]['unsafe'].keys())[0]
-            UnSafe.config(text=unsafe_name.capitalize(), command=lambda: Run(method="unsafe", action=unsafe_name))
-            UnSafe.pack(side='right', fill='x', expand=True)
-        else:
-            UnSafe.pack_forget()
-        # ==============================================================================================================
-        if 'checksum' in type_safe_name:
-            checksum_name = list(execute[type]['checksum'].keys())[0]
-            Checksum.config(text=checksum_name.capitalize(), command=lambda: Run(method="checksum", action=checksum_name))
-            Checksum.pack(side='left', fill='x', expand=True)
-        else:
-            Checksum.pack_forget()
-        # ==============================================================================================================
-
-        type_lbl.config(text='~ ' + type.upper() + ' ~')
+        try:
+            type = selected_typeVar.get()
+            type_safe_name = list(execute[type].keys())
+            # ==============================================================================================================
+            if 'safe' in type_safe_name:
+                safe_name = list(execute[type]['safe'].keys())[0]
+                Safe.config(text=safe_name.capitalize(), command=lambda: Run(method="safe", action=safe_name))
+                Safe.pack(side='left', fill='x', expand=True)
+            else:
+                Safe.pack_forget()
+            # ==============================================================================================================
+            if 'unsafe' in type_safe_name:
+                unsafe_name = list(execute[type]['unsafe'].keys())[0]
+                UnSafe.config(text=unsafe_name.capitalize(), command=lambda: Run(method="unsafe", action=unsafe_name))
+                UnSafe.pack(side='right', fill='x', expand=True)
+            else:
+                UnSafe.pack_forget()
+            # ==============================================================================================================
+            if 'checksum' in type_safe_name:
+                checksum_name = list(execute[type]['checksum'].keys())[0]
+                Checksum.config(text=checksum_name.capitalize(), command=lambda: Run(method="checksum", action=checksum_name))
+                Checksum.pack(side='left', fill='x', expand=True)
+            else:
+                Checksum.pack_forget()
+            # ==============================================================================================================
+            type_lbl.config(text='~ ' + type.upper() + ' ~')
+        except Exception:
+            pass
+        
     for i in sorted(list(execute.keys())):
         Radiobutton(types_radiobtns_frame, text=i.upper(), value=i, variable=selected_typeVar, bootstyle='toolbutton-dark', padding=15, takefocus=False, cursor='hand2', command=lambda : Type_changed()).pack(fill='x', pady=1)
 
