@@ -173,3 +173,31 @@
   - Base58 encode even if it put on decode.
 - hSha224.py:6,8
   - Sha224 hash on sha1
+
+# v2_1_2
+### Added:
+    1. added 11 more new types.
+    2. searchable types.
+    3. added morse code seperators.
+    3. added morse code spacers.
+    4. added more and implementable morse code, _ and . characters.
+### Edited:
+    1. From (Window starts in full-screen mode) to (normal mode).
+    2. implemented morse (code).
+### Updated:
+    Dummy:
+        1. can select characters:
+            1. english letters upper
+            2. english letters lower
+            3. global punctuations
+            4. arabic letters
+            5. arabic numbers
+            6. arabic punctuations
+            7. arabic formatters
+        2. added more characters:
+            1. arabic punctuations
+            2. arabic formatters
+        3. added 5 more seperators:
+            1. arabic punctuations
+### Patches:
+    1. morse characters wrong implementation
