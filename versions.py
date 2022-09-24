@@ -25,11 +25,12 @@ Patches:
 """
 
 
-v2_1_2 = ["hexadecimal", "color to rgb", "color to hex", "hex to color", "hex to rgb", "rgb to hex", "rgb to color", "html", "kmac128", "kmac256", "timestamp"]
+v2_1_2 = ["hexadecimal", "color to rgb", "color to hex", "hex to color", "hex to rgb", "rgb to hex", "rgb to color", "html", "kmac128", "kmac256", "timestamp", "replace", "remove"]
+
 """
 v2_1_2
 Added:
-    1. added 11 more new types.
+    1. added 13 more new types (total 60).
     2. searchable types.
     3. added morse code seperators.
     3. added morse code spacers.
