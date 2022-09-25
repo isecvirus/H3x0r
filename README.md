@@ -95,7 +95,7 @@
 
 # Version 2.0.0
 ## H3x0r
-    - no need to think hexor is taken from the word (hex/hexadecimal)
+  - no need to think hexor is taken from the word (hex/hexadecimal)
 
 ---
 
@@ -174,59 +174,61 @@
 - hSha224.py:6,8
   - Sha224 hash on sha1
 
-# v2_1_2
-- Added:
-    1. added 11 more new types.
-    2. searchable types.
-    3. added morse code seperators.
-    4. added morse code spacers.
-    5. added more and implementable morse code, _ and . characters.
-    - Types:
-      1. hexadecimal
-         - encode
-         - decode
-      2. color to rgb
-         - convert
-      3. color to hex
-         - convert
-      4. hex to color
-         - convert
-      5. hex to rgb
-         - convert
-      6. rgb to hex
-         - convert
-      7. rgb to color
-         - convert
-      8. html
-         - encode
-         - decode
-      9. kmac128
-         - hash
-      10. kmac256
-          - hash
-      11. timestamp
-          - convert
-      12. replace
-          - replace
-      13. remove
-          - remove
+# Version 2.1.2
+### Added:
+  - added 11 more new types.
+  - searchable types.
+  - added morse code seperators.
+  - added morse code spacers.
+  - added more and implementable morse code, _ and . characters.
+  - paste button for input and output
+  - Types:
+    - hexadecimal
+      - encode
+        - decode
+    - color to rgb
+      - convert
+    - color to hex
+      - convert
+    - hex to color
+      - convert
+    - hex to rgb
+      - convert
+    - rgb to hex
+      - convert
+    - rgb to color
+      - convert
+    - html
+      - encode
+      - decode
+    - kmac128
+      - hash
+    - kmac256
+      - hash
+    - timestamp
+      - convert
+    - replace
+      - replace
+    - remove
+      - remove
 ### Edited:
-    1. From (Window starts in full-screen mode) to (normal mode).
-    2. implemented morse (code).
+  - From (Window starts in full-screen mode) to (normal mode).
+  - implemented morse (code).
+  - safe/unsafe/checksum buttons are unique now and renamed and shows based on what type are you selecting
 ### Updated:
-    Dummy:
-        1. can select characters:
-            1. english letters upper
-            2. english letters lower
-            3. global punctuations
-            4. arabic letters
-            5. arabic numbers
-            6. arabic punctuations
-            7. arabic formatters
-        2. added more characters:
-            1. arabic punctuations
-            2. arabic formatters
-        3. added 5 more seperators:
-            1. arabic punctuations
+  - Dummy:
+    - can select characters:
+      - english letters upper
+      - english letters lower
+      - global punctuations
+      - arabic letters
+      - arabic numbers
+      - arabic punctuations
+      - arabic formatters
+    - added more characters:
+      - arabic punctuations
+        - arabic formatters
+    - added 5 more seperators:
+      - arabic punctuations
 ### Patches:
-    1. morse characters wrong implementation
+  - morse characters wrong implementation
