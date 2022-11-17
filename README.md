@@ -185,7 +185,7 @@
   - Types:
     - hexadecimal
       - encode
-        - decode
+      - decode
     - color to rgb
       - convert
     - color to hex
