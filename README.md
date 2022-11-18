@@ -1,4 +1,4 @@
-![Logo](logo/hexor.ico)
+![Logo](logo/h3x0r.png)
 
 # Version 1.0.0
 ## EDHC
