@@ -1,4 +1,4 @@
-def HexDump(file, type: str = 'hex', fence: str = '|'):
+def HexDump(file, type: str = 'hexadecimal', fence: str = '|'):
     try:
         table = ""
         with open(file, "rb") as f:
@@ -6,14 +6,17 @@ def HexDump(file, type: str = 'hex', fence: str = '|'):
             b = f.read(16)
 
             while b:
-                if type == 'hex':
+                if type == 'hexadecimal':
                     s1 = " ".join([f"{i:02x}" for i in b])  # hex string
                     s1 = s1[0:23] + " " + s1[23:]  # insert extra space between groups of 8 hex values
                     width = 48
-                else:
+                elif type == "binary":
                     s1 = " ".join([f"{i:08b}" for i in b])  # binary string
                     s1 = s1[0:71] + " " + s1[71:]  # insert extra space between groups of 8 binary values
                     width = 144
+                else:
+                    f.close()
+                    return ''
                 # as> 72<here>20<here>61
                 # 72 74 20 61 72 67 70 61
 
