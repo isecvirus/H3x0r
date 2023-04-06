@@ -1,0 +1,139 @@
+/* #f8c901, #f9b509, #f99e11 */
+html {
+    background: linear-gradient(45deg, #f8c901, #f9b509, #f99e11);
+    background-position: center;
+    background-size: 150% 150%;
+}
+
+header {
+    display: flex;
+    /* flex-direction: column; */
+    width: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header span{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+header img {
+    width: 60px;
+    height: 60px;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.input, .output {
+    width: 100%;
+    margin: 0 auto;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    resize: vertical;
+    outline: none;
+    padding: 5px;
+    color: #ffffff;
+}
+
+.input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    /* border-bottom: 0; */
+}
+.output {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top: 0;
+}
+
+
+.secret {
+    width: 100%;
+    /* border-radius: 100px; */
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    padding-right: 100%;
+    cursor: pointer;
+    outline: none;
+    text-align: center !important;
+    transition: 0.25s;
+}
+
+.secret:hover {
+    background: #ffffff19;
+}
+.secret:active {
+    background: #ffffff40;
+}
+
+.controllers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.textfield {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 100px;
+    width: fit-content;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.textfield input, .textfield select {
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: none;
+    width: 30px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    text-align: center;
+}
+.textfield select {
+    width: fit-content;
+}
+.textfield select option {
+    color: black;
+}
+.textfield span {
+    user-select: none;
+    background: #ffffff84;
+    border-radius: 100px;
+    padding: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.textfield span:hover {
+    background: #ffffffaa;
+}
+
+::placeholder {
+    color: #2222224a;
+}

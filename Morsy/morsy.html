@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="morsy.css">
+        <link rel="icon" href="morsy.png">
+        <script src="morsy.js"></script>
+        <title>Morsy</title>
+    </head>
+
+    <header>
+        <img src="morsy.png" alt="" height="50" width="50">
+        <span>Morsy</span>
+    </header>
+    
+    <body>
+        <div class="container">
+            <textarea class="input" id="input" oninput="update()" name="input-textarea" id="" cols="30" rows="20" placeholder="Input" spellcheck="false"></textarea>
+            <!-- <button class="secret">Encode</button> -->
+            <textarea id="output" class="output" name="output-textarea" id="" cols="30" rows="20" placeholder="Output" spellcheck="false" readonly></textarea>
+            <div class="controllers">
+                <div class="textfield">
+                    <span title="Operation type, encode or decode.">operation</span>
+                    <select oninput="update()" id="operation-type" class="operation-type">
+                        <option value="Encode">Encode</option>
+                        <option value="Decode">Decode</option>
+                    </select>
+                </div>
+                <div class="textfield">
+                    <span title="Separator character between every character.">separator</span>
+                    <input oninput="update()" id="separator" class="separator" maxlength="1" minlength="1" value="/">
+                </div>
+                <div class="textfield">
+                    <span title="Space character between every word.">space</span>
+                    <input oninput="update()" id="space" class="space" maxlength="1" minlength="1" value=" ">
+                </div>
+                <div class="textfield">
+                    <span title="Dash character (Default -)">dash</span>
+                    <input oninput="update()" id="dash" class="dash" maxlength="1" minlength="1" value="-">
+                </div>
+                <div class="textfield">
+                    <span title="Dot character (Default .)">dot</span>
+                    <input oninput="update()" id="dot" class="dot" maxlength="1" minlength="1" value=".">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
