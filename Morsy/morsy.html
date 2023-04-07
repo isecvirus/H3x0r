@@ -29,12 +29,12 @@
                     </select>
                 </div>
                 <div class="textfield">
-                    <span title="Separator character between every character.">separator</span>
-                    <input oninput="update()" id="separator" class="separator" maxlength="1" minlength="1" value="/">
-                </div>
-                <div class="textfield">
                     <span title="Space character between every word.">space</span>
                     <input oninput="update()" id="space" class="space" maxlength="1" minlength="1" value=" ">
+                </div>
+                <div class="textfield">
+                    <span title="Separator character between every character.">separator</span>
+                    <input oninput="update()" id="separator" class="separator" maxlength="1" minlength="1" value="/">
                 </div>
                 <div class="textfield">
                     <span title="Dash character (Default -)">dash</span>
@@ -43,6 +43,10 @@
                 <div class="textfield">
                     <span title="Dot character (Default .)">dot</span>
                     <input oninput="update()" id="dot" class="dot" maxlength="1" minlength="1" value=".">
+                </div>
+                <div class="textfield">
+                    <span title="Character to put instead of untranslatable characters">unknown</span>
+                    <input oninput="update()" id="untranslatable" class="untranslatable" maxlength="1" minlength="1" value="#">
                 </div>
             </div>
         </div>
